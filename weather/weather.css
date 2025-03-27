@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background:url(img.jpg);
+    background-size: cover;    height: 100vh;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.weather-container{
+    box-shadow: 0 0 20px rgb(242, 236, 236);
+    width: 500px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 30px;
+    transition: 3s all ease;
+    backdrop-filter: blur(40px);
+    color: white;
+}
+form{
+    display: flex;
+    justify-content: center;
+align-items: center;
+  margin: 20px;
+}
+form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(60px);
+    box-shadow: 0px 0px 10px blanchedalmond;
+}
+
+form input[type="text"]::placeholder{
+    color: rgb(248, 244, 244);
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form input[type="submit"] {
+    background:transparent;
+    box-shadow: 0px 0px 10px blanchedalmond;
+    padding: 9px;
+    width: 150px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+border-radius: 15px;
+font-size: 15px;
+cursor: pointer;
+outline: none;
+transition: background-color .3s ease;
+}
+.weather-container .heading{
+    font-weight: bold;
+    color: white;
+}
+form input[type="submit"]:hover{
+    background-color:  rgb(117, 75, 20);
+}
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.temperature{
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 20px 0;   
+}
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details >div{
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 45px;
+}
+#suggestions{
+    /* position: absolute; */
+    background: transparent;
+    max-height: 100px;
+    overflow-y:auto;
+    color: white;
+    width: 100%;
+    margin-right: 170px;
+    display: none;
+    z-index: 1000;
+    /* top: 400px; */
+}
+.sugeestions-item{
+    padding: 4px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+
+}
+.suggestions-item:hover {
+    background-color: #f0f0f0;
+}
+.sugeestions-item:last-child{
+    border-bottom: none;
+}
+
